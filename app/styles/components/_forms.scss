@@ -1,0 +1,38 @@
+// form fields
+.ac-rounded-field {
+	border-radius: 50px;
+}
+
+label {
+	font-family: $ubuntu-bold;
+	font-weight: normal;
+	.checkbox & ,
+	.radio & {
+		font-family: $ubuntu;
+	}
+}
+
+// Focus state
+.form-control {
+	&:hover {
+		border: 1px solid $link-color;
+	}	
+	&:focus {
+		outline: 3px solid $link-color;
+		box-shadow: none;
+	}
+}
+
+// icon field
+.ac-icon-input {
+	position: relative;
+	.ac-input {
+		padding-right: 45px;
+	}
+	.fa {
+		position: absolute;
+		top: 7px;
+		right: 7px;
+		pointer-events:none;
+	}
+}

@@ -1,0 +1,37 @@
+.ac-pagination {
+	text-align: center;
+	li {
+		display: inline-block;
+		margin-right: 2px;
+	}
+	a {
+		border: 1px solid $link-color;
+		@include link-overrides {
+			text-decoration: none;
+		}
+		&:hover,&:focus {
+			background: $link-color;
+			color: #fff;
+		}
+	}
+
+	.active a {
+		color: $text-color;
+		@include link-overrides {
+			background: #fff; 
+		}
+	}
+
+	.disabled a,
+	a[disabled] {
+		color: $pagination-disabled-color;
+		border-color: $pagination-disabled-border;
+		cursor: not-allowed;
+		pointer-events: none;
+		@include link-overrides {
+			background: $pagination-disabled-bg; 
+		}
+	}
+
+	@include pagination-size($font-size-base, $font-size-base, $font-size-base, $line-height-base, 0)
+}

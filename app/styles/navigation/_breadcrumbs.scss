@@ -1,0 +1,23 @@
+.breadcrumb {
+	font-size: $font-size-base - 3; 
+	padding-left: 0;
+	a {
+		@include link-overrides {
+			text-decoration: none;
+		}
+	}
+}
+
+.ac-breadcrumb-large {	
+	font-size: $font-size-base;	 
+	li {
+		margin-right: $font-size-base;
+	}
+	 > li + li:before {
+	 	display: none;
+	 }
+	 li:not(.active):after {	 	
+	 	content: '\203A';
+	 	padding-left: 3px;
+	 }
+}

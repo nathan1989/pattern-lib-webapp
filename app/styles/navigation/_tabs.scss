@@ -1,0 +1,41 @@
+.ac-tabs {
+
+	.nav > li > a {
+		padding: $font-size-base;
+		border-radius: 0;
+		font-family: $ubuntu;
+	}
+
+	.nav > li:not(.active) > a {
+		background: #f8f8f8;	
+		border-bottom: 1px solid $nav-tabs-border-color;	
+	}
+
+	&.ac-tabs-vertical {
+		@include clearfix();
+		border: 1px solid $nav-tabs-border-color;  
+		.nav {
+			width: 25%;
+			float: left;
+			border: 0;
+			border-right: 1px solid $nav-tabs-border-color;
+			> li {
+				float: none;
+				display: block;
+				margin-bottom: 0;
+				> a {
+					border: 0;
+					border-bottom: 1px solid $nav-tabs-border-color;
+					margin-right: 0;
+				}
+				&:last-child a {
+					border-bottom: 0;
+				}
+			}
+		}
+		.tab-content {
+			width: 75%;
+			float: right;
+		}
+	}
+}

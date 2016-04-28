@@ -1,0 +1,75 @@
+// paths
+$icon-font-path: '../fonts/';
+$fa-font-path: '../fonts';
+$image-path: '../images/';
+
+// fonts
+$bliss-regular: 'bliss-regular', Arial;
+$bliss-bold: 'bliss-bold', Arial;
+$bliss-light: 'bliss-light', Arial;
+$ubuntu: 'ubuntu', Helvetica, Arial sans-serif;
+$ubuntu-bold: 'ubuntu-bold', Helvetica, Arial sans-serif;
+
+// screen sizes
+$screen-xlg: 1440px;
+
+// typography
+$text-color: #00304b;
+$font-size-base: 16px;
+$font-family-base: $ubuntu;
+$link-color: #007cba;
+
+// font icons
+$fa-font-size-base: $font-size-base;
+
+// tables
+$table-bg-accent: #f8f8f8;
+$table-cell-padding: 16px;
+
+// headings
+$headings-font-family: $bliss-bold;
+$font-size-h1: 36px;
+$font-size-h1-large: 42px;
+$font-size-h2: 30px;
+$font-size-h3: 24px;
+$font-size-h4: 24px;
+
+// footer
+$footer-bg: #012f4d;
+
+// margin helpers
+$margin-small: 5px;
+$margin-medium: 15px;
+$margin-large: 40px;
+
+// padding helpers
+$padding-small: $margin-small;
+$padding-medium: $margin-medium;
+$padding-large: $margin-large;
+
+// buttons
+$btn-default-color: $link-color;
+$btn-default-bg: #fff;
+$btn-default-border: #e3e3e3;
+
+// pagination
+$pagination-border: $link-color;
+$pagination-hover-color: #fff;
+$pagination-hover-bg: $link-color;
+$pagination-hover-border: $link-color;
+$pagination-active-color: $text-color;
+$pagination-active-bg: transparent;
+
+// breadcrumbs
+$breadcrumb-bg: transparent;
+$breadcrumb-color: $link-color;
+$breadcrumb-active-color: #808080;
+$breadcrumb-separator: ">";
+
+// forms
+$input-height-base: 48px;
+$input-border: #ccc;
+$input-border-focus: $input-border;
+$input-border-radius: 0;
+$input-border-radius-large: 0;
+$input-border-radius-small: 0;

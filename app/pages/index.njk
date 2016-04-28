@@ -1,0 +1,149 @@
+{% block title %}Home{% endblock %}
+{% extends "layouts/default.njk" %}
+{% set active_page = 'index' %}
+{% block content %}
+<h1>Global</h1>
+
+<section class="margin-bottom-large">
+  <h2>Headings</h2>
+
+  <h1>Heading one</h1>
+
+  <h2>Heading two</h2> 
+
+  <h3>Heading three</h3> 
+
+  <h4>Heading four</h4> 
+
+  <h5>Heading five</h5> 
+
+  <h6>Heading six</h6> 
+</section>
+
+<section class="margin-bottom-large">
+  <h2>Paragraph example</h2>
+
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+</section>
+
+<section class="margin-bottom-large">
+  <h2>Lead paragraph</h2>
+
+  <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.</p>
+</section>
+
+<section class="margin-bottom-large">
+  <h2>Links</h2>
+  <a href="">Link to internal page</a><br>
+  <a href="" class="ext-link">Visa options check for students</a>
+</section>
+
+<section class="margin-bottom-large">
+  <h2>Lists</h2>
+  <ul>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ul>
+
+  <ol>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ol>
+</section>
+
+<section class="margin-bottom-large">
+  <h2>Tables</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>Standardised fee category (note 2)</td>
+        <td>No transition (note 3) Fee</td>
+        <td>Under transition Fee</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Grade A, High risk</td>
+        <td>$1048</td>
+        <td>$862</td>
+      </tr>
+      <tr>
+        <td>Grade B, High risk</td>
+        <td>$1234</td>
+        <td>$976</td>
+      </tr>
+      <tr>
+        <td>Grade C, High risk</td>
+        <td>$1419</td>
+        <td>$1089</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-bold">
+    <thead>
+      <tr>
+        <td>Standardised fee category (note 2)</td>
+        <td>No transition (note 3) Fee</td>
+        <td>Under transition Fee</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Grade A, High risk</td>
+        <td>$1048</td>
+        <td>$862</td>
+      </tr>
+      <tr>
+        <td>Grade B, High risk</td>
+        <td>$1234</td>
+        <td>$976</td>
+      </tr>
+      <tr>
+        <td>Grade C, High risk</td>
+        <td>$1419</td>
+        <td>$1089</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="margin-bottom-large">
+  <h2>Buttons</h2>
+
+  <h3>Primary</h3>
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-primary" disabled>Primary Disabled</button>
+
+  <h3>Secondary</h3>
+  <button class="btn btn-default">Secondary</button>
+  <button class="btn btn-default" disabled>Secondary Disabled</button>
+
+  <h3>Image button</h3>
+  <button class="btn btn-default ac-btn-image-right">Apply for building consent</button>
+
+  <h3>Icon button</h3>
+  <a href="#" class="fa fa-search ac-icon-bg" aria-label="Search"></a>
+</section>
+
+<section class="margin-bottom-large">
+  <h2>Header</h2>
+<header class="ac-header">
+    <a class="ac-header-logo pull-left" href="#"><img src="images/auckland-council-logo.jpg" class="img-responsive"></a>
+    <form class="pull-left ac-search-form" role="search">
+        <label for="search" class="sr-only">Search</label>
+        <input type="text" id="search" name="search" class="form-control ac-rounded-field">
+        <button type="submit" class="fa fa-search ac-icon-bg"><span class="sr-only">Submit</span></button>
+    </form>
+    <a href="#" class="pull-right text-center ac-no-underline"><i class="fa fa-home ac-icon-standard ac-display-block"></i>Home</a></li>
+  </header>
+</section>
+{% endblock %}

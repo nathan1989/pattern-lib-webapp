@@ -1,0 +1,154 @@
+// button
+button {
+	outline: 0;
+}
+
+.btn {
+	border-radius: 50px;
+	font-family: $ubuntu-bold;
+	padding: 16px 32px;
+	font-size: $font-size-base - 1;
+	&:hover {
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	}
+
+	@include link-overrides {
+		background: $btn-default-bg;
+		color: $btn-default-color;
+	}
+
+	&:focus {
+		outline: 0;
+		border-color: #4C4C4C;
+	}
+
+	&:active:focus {
+		outline: 0;
+	}
+
+	&[disabled] {
+		opacity: 1;
+	    background-color: #f0f0f0;
+	    color: #b2b2b2;
+		@include link-overrides {
+			border-color: $btn-default-border;
+			background: #f0f0f0;
+			color: #acacac;
+			box-shadow: none;
+		}
+	}
+}
+
+.btn-primary {
+	border-color: $btn-primary-bg;
+	@include link-overrides {
+		background: $btn-primary-bg;
+		color: $btn-primary-color;
+		border-color: $btn-primary-border;
+	}
+
+	&[disabled] {
+		border-color: #808080;
+	    background-color: #808080;
+	    color: #acacac;
+		@include link-overrides {
+			border-color: #808080;
+			background: #808080;
+			color: #acacac;
+		}
+	}
+}
+
+@mixin blue-icon(){
+	width: ($fa-font-size-base * 2) + 4;
+	height: ($fa-font-size-base * 2) + 4;
+	line-height: ($fa-font-size-base * 2) + 4;
+	background: $link-color;
+	color: #fff;
+	border-radius: 50px;
+	border: 0;
+	padding: 0;
+	text-align: center;
+}
+
+[class*="ac-btn-image"] { // button with icon inside it
+	position: relative;
+	color: $text-color;
+	font-family: $ubuntu;
+	&:before,
+	&:after {
+		content: $fa-var-chevron-right;
+		font-family: FontAwesome;
+		@include blue-icon();
+		text-indent: 3px;
+		position: absolute;
+		right: 5px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.ac-btn-image-right {
+	padding-right: ($fa-font-size-base * 2) + 15;
+	&:before {
+		display: none;
+	}
+}
+
+.ac-btn-image-left {
+	padding-left: ($fa-font-size-base * 2) + 15;
+	&:after {
+		display: none;
+	}
+	&:before {
+		content: $fa-var-chevron-left;
+		right: inherit;
+		left: 5px;
+		text-indent: -3px;
+	}
+}
+
+// social media
+
+// views
+
+// icons
+.ac-icon-small {
+	font-size: $fa-font-size-base;	
+}
+
+.ac-icon-standard {
+	font-size: $fa-font-size-base * 2;
+}
+
+.ac-icon-medium {
+	font-size: $fa-font-size-base * 3;
+}
+
+.ac-icon-large {
+	font-size: $fa-font-size-base * 4;
+}
+
+.ac-icon-massive {
+	font-size: $fa-font-size-base * 5;
+}
+
+.ac-icon-label {
+	margin-left: 5px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.ac-icon-bg { // icon with blue background
+	@include blue-icon();
+	&:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+}
+
+// signposts
+
+// feedback
+
+// text size increase

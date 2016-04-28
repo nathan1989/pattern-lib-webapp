@@ -1,0 +1,109 @@
+// html/body
+html {
+
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+}
+
+.touch body {
+	-webkit-tap-highlight-color: rgba(0,0,0,0); // Stop android blue screen on click 
+}
+
+// If using old IE
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+// focus
+*:focus {
+    outline: 3px solid $link-color;
+}
+
+// headings
+h1,
+.h1 {
+	font-size: $font-size-h1;
+	@media (min-width: $screen-sm-min) {
+	  font-size: $font-size-h1-large;
+	}
+}
+
+// typography
+
+// links
+
+.ac-no-underline {
+	@include link-overrides {
+		text-decoration: none;
+	}
+}
+
+.ac-ext-link { // external link
+	&:after {
+		content: $fa-var-external-link;
+		font-family: FontAwesome;
+		margin-left: 4px;
+	}
+}
+
+.ac-content-link { // e.g. Title goes here>
+	&:after {
+		content: '\203A';
+	}
+}
+
+// lists
+
+// tables
+.table-striped {
+	> tbody > tr > td {
+		border: 0;
+	}
+}
+thead {
+	font-family: $ubuntu-bold;
+	border-bottom: 2px solid $link-color;
+}
+.table-bold {
+	border: 1px solid $table-border-color;
+
+	> tbody > tr > td {
+		border-top: 0;
+	}
+
+	td,th {
+		border-right: 1px solid #fff;
+		&:last-child {
+			border-right: 0;
+		}
+	}
+
+	thead {
+		font-family: $ubuntu;
+		color: #fff;
+		border-bottom: 0;
+		td,th {
+			background-color: #012f4d;
+			border-color: #fff;
+		}
+	}
+
+	tbody {
+		color: #012f4d;	
+		td, th {
+			border-color: $table-border-color;
+		}	
+	}
+
+	tr:nth-of-type(even) {
+		background-color: #f0eef0; 
+	}
+}
+
+// images

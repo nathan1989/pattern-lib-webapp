@@ -1,0 +1,55 @@
+// Custom variable overrides
+@import "common/_variables";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+// Custom styles and overrides
+// Most custom classes begin with the prefix 'ac-*'
+
+// Common styles
+@import "common/_fonts";
+@import "common/_mixins";
+@import "common/_global";
+@import "common/_utilities";
+@import "common/_buttons";
+@import "common/_header";
+@import "common/_footer";
+@import "common/_search";
+
+// Navigation styles
+@import "navigation/_breadcrumbs";
+@import "navigation/_pagination";
+@import "navigation/_pager"; // left/right or prev/next buttons
+@import "navigation/_accordion";
+@import "navigation/_tabs";
+
+// Components styles
+@import "components/_forms";
+@import "components/_cards";
+@import "components/_grid";
+@import "components/_list";
+@import "components/_sliders";
+@import "components/_documents";
+
+// Panels styles
+@import "panels/_timeline";
+@import "panels/_badges";
+@import "panels/_posters";
+@import "panels/_timeline-status";
+@import "panels/_multimedia";
+
+// Sidebar nav
+.sidebar-nav {
+  .active {
+    text-decoration: underline;
+  }
+}
+
+// Sections
+.section {
+  margin-bottom: 40px;
+}
+
