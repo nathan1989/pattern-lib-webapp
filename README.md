@@ -15,8 +15,11 @@ Run `bower install --save <package>` to install frontend dependencies.
 To create a new 'page', add a `.njk` file to app/pages. Add the following templating code to the new page:
 
 `{% block title %}` Title of your page goes here `{% endblock %}`
+
 `{% extends "layouts/default.njk" %}`
+
 `{% set active_page = '` No spaces, hyphens only variable name for the page  `' %}`
+
 `{% block content %}`
 	Add your HTML code here
 `{% endblock %}`
