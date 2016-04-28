@@ -26,4 +26,6 @@ To create a new 'page', add a `.njk` file to app/pages. Add the following templa
 
 In the sidebar navigation in `app/layouts/default.njk`, add the new nav item for the new page as follows:
 
-`<li><a href="new-page.html" class="{%if active_page == 'new-page' %} active {% endif %}">New Page</a></li>`
+```html
+<li><a href="new-page.html" class="{%if active_page == 'new-page' %} active {% endif %}">New Page</a></li>
+```
