@@ -1,0 +1,24 @@
+.ac-accordion-title {
+	a {
+		color: inherit;
+		padding: 20px 0; 
+		display: block;
+		border-top: 1px solid $panel-default-border;
+		@include link-overrides {
+			text-decoration: none;
+		}
+		&:before {
+			content: $fa-var-plus;
+			font-family: FontAwesome;
+			color: $link-color;
+			margin: 0 35px 0 20px;
+		}
+		&[aria-expanded=true]:before {
+			content: $fa-var-minus;
+		}
+	}
+}
+
+.ac-accordion-content {
+	padding: 0 15px 15px 80px;
+}

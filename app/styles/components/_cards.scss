@@ -1,0 +1,13 @@
+.ac-card {
+	border-top: 4px solid $link-color;
+	*:first-child {
+		margin-top: 0;
+	}
+	*:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.ac-panel-grey {
+	background: #F6F6F6;
+}

@@ -59,16 +59,20 @@ button {
 	}
 }
 
-@mixin blue-icon(){
-	width: ($fa-font-size-base * 2) + 4;
-	height: ($fa-font-size-base * 2) + 4;
-	line-height: ($fa-font-size-base * 2) + 4;
+@mixin blue-icon($size: ($fa-font-size-base * 2) + 4){
+	width: $size;
+	height: $size;
+	line-height: $size;
 	background: $link-color;
 	color: #fff;
 	border-radius: 50px;
 	border: 0;
 	padding: 0;
 	text-align: center;
+	@include link-overrides {
+		text-decoration: none;
+		color: #fff;
+	}
 }
 
 [class*="ac-btn-image"] { // button with icon inside it
